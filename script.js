@@ -25,6 +25,12 @@ function countTweetSize(event){
   else{
     tweetButton.removeAttribute('disabled');
   }
+ 
+}
+
+boxArea.addEventListener('keyup', colorCounter);
+
+function colorCounter(event){
   if(boxArea.value.length > 130){
     tweetSize.setAttribute('class', 'red');
   }
@@ -36,8 +42,9 @@ function countTweetSize(event){
   }
 }
 
-boxArea.addEventListener('keyup', colorCounter);
+boxArea.addEventListener('keyup', boxAreaResize)
 
-function colorCounter(event){
-  
+function boxAreaResize(event){
+  var resize = boxArea.value.split('\n');
+  boxArea.setAttribute('rows', resize.length);
 }

@@ -19,10 +19,25 @@ const tweetLength = 140;
 function countTweetSize(event){
   var counterTweet = tweetLength - boxArea.value.length;
   tweetSize.textContent = counterTweet;
-  if(counterTweet === tweetLength) {
+  if(counterTweet === tweetLength || counterTweet < 0) {
     tweetButton.setAttribute('disabled', '');
   }
   else{
     tweetButton.removeAttribute('disabled');
   }
+  if(boxArea.value.length > 130){
+    tweetSize.setAttribute('class', 'red');
+  }
+  else if(boxArea.value.length > 120){
+    tweetSize.setAttribute('class', 'orange');
+  }
+  else{
+    tweetSize.setAttribute('class', 'blue');
+  }
+}
+
+boxArea.addEventListener('keyup', colorCounter);
+
+function colorCounter(event){
+  
 }

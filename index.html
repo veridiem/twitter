@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-  <html lang="pt-br">
+<html>
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css"/>
+    <meta name="viewport" content="width=device-width">
+    <link href="style.css" rel="stylesheet" type="text/css" />
     <title>Twitter</title>
   </head>
   <body>
     <header>
+    <h1>Twitter</h1>
     <div class="menu"> 
       <ul>
         <li><a href="#paginainicial">Página Inicial</a></li>
@@ -20,10 +20,11 @@
     <section>
       <textarea id="boxArea" cols="40" rows="5" placeholder="O que está acontecendo?"></textarea>
       <input type="submit" id="tweetButton" value="Tweet" disabled>
-      <span id="tweetSize">140</span>
+      <span id="tweetSize" class="blue">140</span>
       <ul id="myTweets">
       </ul>
     </section>  
     
     <script src="script.js"></script>
   </body>
+</html>

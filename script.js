@@ -1,9 +1,13 @@
-let tweetsBox = document.querySelector("#boxarea");
+let boxArea = document.querySelector("#boxArea");
 let tweetButton = document.querySelector("#tweetButton");
+let myTweets = document.querySelector("#myTweets");
 
-document.getElementsById("boxarea").addEventListener("click", funcao);
 
-function toTweet(){
+tweetButton.addEventListener('click', toTweet);
 
+function toTweet(event){
+  let addTweet = document.createElement('li');
+  addTweet.textContent = boxArea.value;
+  myTweets.appendChild(addTweet);
+  boxArea.value = "";
 }
-

@@ -1,4 +1,4 @@
-.orange{
+ .orange{
     color: orange;
 }
 
@@ -9,4 +9,46 @@
 .blue{
     color: #00aced;
 }
+
+body{
+    background-color: #e6ecf0;
+}
+.menu{
+    list-style: none;
+    font-family: "Segoe UI", "Arial", sans-serif;
+    font-size: 14px;
+    font-weight: 650; 
+}
+
+.menu ul li a{
+    text-decoration: none;
+    font-size: .875rem;
+    color: #66757f;
+}
+
+.menu a:hover{
+    color: #00aced;
+}
+
+li {
+    white-space: pre-line;
+    list-style: none;
+}
+
+#myTweets{
+    background-color: #FFFFFF;
+    width: 40%;
+}
+
+textarea{
+    
+}
+
+
+
+/*textarea{
+    overflow-wrap: break-word;
+}*/
+
+
 

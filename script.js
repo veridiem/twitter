@@ -8,7 +8,9 @@ tweetButton.addEventListener('click', toTweet);
 
 function toTweet(event){
   let addTweet = document.createElement('li');
-  addTweet.textContent = boxArea.value;
+  var tweetTime = new Date().toTimeString().substring(0,5);
+
+  addTweet.textContent = boxArea.value + ' [' + tweetTime + ']';
   myTweets.appendChild(addTweet);
   boxArea.value = "";
 }
@@ -25,7 +27,6 @@ function countTweetSize(event){
   else{
     tweetButton.removeAttribute('disabled');
   }
- 
 }
 
 boxArea.addEventListener('keyup', colorCounter);
@@ -46,5 +47,5 @@ boxArea.addEventListener('keyup', boxAreaResize)
 
 function boxAreaResize(event){
   var resize = boxArea.value.split('\n');
-  boxArea.setAttribute('rows', resize.length);
+  boxArea.setAttribute('rows', resize.length); 
 }

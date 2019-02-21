@@ -4,23 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <title>Twitter</title>
   </head>
   <body>
     <header>
     <div class="menu"> 
       <ul>
-        <li><a href="#paginainicial">Página Inicial</a></li>
-        <li><a href="#moments">Moments</a></li>
-        <li><a href="#notificacoes">Notificações</a></li>
-        <li><a href="mensagens">Mensagens</a></li>
+        <li><a href="#">Página Inicial</a></li>
+        <li><a href="#">Moments</a></li>
+        <li><a href="#">Notificações</a></li>
+        <li><a href="#">Mensagens</a></li>
+        <li><i class="fab fa-twitter"></i></li>
       </ul>
+    </div>
     </header>
-    <section>
+    <section class="tweetArea">
       <textarea id="boxArea" cols="40" rows="1" placeholder="O que está acontecendo?"></textarea>
       <input type="submit" id="tweetButton" value="Tweet" disabled>
       <span id="tweetSize" class="blue">140</span>
-      <ul id="myTweets">
+      <ul id="myTweets" class="myTweets">
       </ul>
     </section>  
     

@@ -1,4 +1,16 @@
- .orange{
+*{
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+
+body{
+    background-color: #e6ecf0;
+}
+
+/*Cor do contador*/
+
+.orange{
     color: orange;
 }
 
@@ -10,20 +22,38 @@
     color: #00aced;
 }
 
-body{
-    background-color: #e6ecf0;
-}
+/* Menu */
+
 .menu{
     list-style: none;
     font-family: "Segoe UI", "Arial", sans-serif;
     font-size: 14px;
     font-weight: 650; 
+    display: flex;
+    justify-content: flex-start;
+    background-color: #FFFFFF;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    text-align: center;
+    padding: 10px 10px;
+    margin: 0;
+    height: 45px;
 }
+
+.menu ul{
+    -moz-column-count: 1;
+    -moz-column-gap: 10px;
+    column-count: 1;
+    column-gap: 10px;
+  }
 
 .menu ul li a{
     text-decoration: none;
     font-size: .875rem;
     color: #66757f;
+    display: inline-block;
 }
 
 .menu a:hover{
@@ -33,18 +63,35 @@ body{
 li {
     white-space: pre-line;
     list-style: none;
+    border-color: #66757f;
+    border-radius: 10px;
+
 }
 
-#myTweets{
+.myTweets{
     background-color: #FFFFFF;
     width: 40%;
+    border-radius: 10px;
+    justify-content: center;
 }
 
 textarea{
-    
+    border-radius: 10px;
+    display: auto;
+    justify-content: center;
+    align-content: flex-start;
+}
+
+.tweetArea{
+    margin-top: 20px;
+    margin-left: 50px;
 }
 
 
+i{
+    font-size: 18px;
+    color: #00aced;
+}
 
 /*textarea{
     overflow-wrap: break-word;
